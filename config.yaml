@@ -60,7 +60,7 @@ params:
     ShowCodeCopyButtons: true
     ShowToc: true
     # comments: false
-    images: ["papermod-cover.png"]
+    images: ["resources/_gen/images/pngegg.png"]
 
     profileMode:
         enabled: true
@@ -71,8 +71,10 @@ params:
                  **Miguel Salema**
         Author: "**Miguel Salema**"
         description: "grewgwgw"
-        imageUrl: "#"
-        imageTitle: my image
+        imageUrl: "resources/_gen/images/pngegg.png"
+        imageTitle: "<pngegg>" # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
         # imageWidth: 120
         # imageHeight: 120
         buttons:
@@ -81,7 +83,6 @@ params:
             - name: Tags
               url: tags
               
-
         
 
     homeInfoParams:
