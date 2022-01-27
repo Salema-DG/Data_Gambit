@@ -15,6 +15,82 @@ minify:
     disableXML: true
     # minifyOutput: true
 
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: Data Gambit
+    author: Miguel Salema
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: true
+    ShowReadingTime: true
+    # disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowToc: true
+    # comments: false
+    images: ["https://raw.githubusercontent.com/Salema-DG/Data_Gambit/main/resources/_gen/images/exp3.png"]
+  
+    profileMode:
+        enabled: false
+        Title: "Data Gambit"
+        Subtitle: > 
+                 Life is made of trade-offs  
+                 
+                 **Miguel Salema**
+        Author: "**Miguel Salema**"
+        
+        #imageUrl: "resources/_gen/images/fig1.png"
+        #images: "resources/_gen/images/fig1.png"
+        imageUrl: "https://raw.githubusercontent.com/Salema-DG/Data_Gambit/main/resources/_gen/images/exp3.png"
+        imageTitle: "work" # optional
+        imageWidth: 250 # custom size
+        imageHeight: 250 # custom size
+        buttons:
+            - name: Archives
+              url: archives
+              
+        
+
+    homeInfoParams:
+        Title: "Data Gambit"
+        Content: >
+             **Miguel Salema**  
+             
+             Life is made of trade-offs
+
+             
+             
+    socialIcons:
+        - name: github
+          url: "https://github.com/Salema-DG?tab=repositories"
+        - name: twitter
+          url: "https://twitter.com/SalemaMiguel"
+
+
+
+
+    label:
+        text: "Data Gambit"
+        icon: "https://raw.githubusercontent.com/Salema-DG/Data_Gambit/main/resources/_gen/images/exp3.png"
+        iconHeight: 50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 menu:
     main:
                 - name: About 
@@ -41,61 +117,13 @@ outputs:
         - RSS
         - JSON
 
-params:
-    env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    #author: Miguel Salema
-    # author: ["Me", "You"] # multiple authors
 
-    defaultTheme: auto
-    # disableThemeToggle: true
-    ShowShareButtons: true
-    ShowReadingTime: true
-    # disableSpecial1stPost: true
-    displayFullLangName: true
-    ShowPostNavLinks: true
-    ShowBreadCrumbs: true
-    ShowCodeCopyButtons: true
-    ShowToc: true
-    # comments: false
-    #images: ["resources/_gen/images/pngegg.png"]
-    
-  
-    profileMode:
-        enabled: true
-        Title: "Data Gambit"
-        Subtitle: > 
-                 Life is made of trade-offs  
-                 
-                 **Miguel Salema**
-        Author: "**Miguel Salema**"
-        description: "grewgwgw"
-        #imageUrl: "resources/_gen/images/fig1.png"
-        #images: "resources/_gen/images/fig1.png"
-        imageUrl: "https://raw.githubusercontent.com/Salema-DG/Data_Gambit/main/resources/_gen/images/exp3.png"
-        imageTitle: "work" # optional
-        imageWidth: 250 # custom size
-        imageHeight: 250 # custom size
-        buttons:
-            - name: Archives
-              url: archives
-            - name: Tags
-              url: tags
-              
-        
 
-    homeInfoParams:
-        Title: "Data Gambit"
-        Subtitle: "Life is made of trade-offs."
-        Content: >
-             **Miguel Salema**
-             
-             
-    socialIcons:
-        - name: github
-          url: "https://github.com/Salema-DG?tab=repositories"
-        - name: twitter
-          url: "https://twitter.com/SalemaMiguel"
-
+cover:
+    image: "https://raw.githubusercontent.com/Salema-DG/Data_Gambit/main/resources/_gen/images/exp3.pn" # image path/url
+    caption: "<text>" # display caption under cover
+    relative: false # when using page bundles set this to true
+    hidden: false # only hide on current single page
 
 taxonomies:
     category: categories
