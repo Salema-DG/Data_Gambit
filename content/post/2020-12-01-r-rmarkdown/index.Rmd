@@ -35,3 +35,14 @@ pie(
   init.angle = -50, border = NA
 )
 ```
+
+
+![description](content/post/index_files/figure.html/pngegg.png)
+
+```{r  label = pollen, echo = TRUE}
+knitr::include_graphics("index_files/figure.html/pngegg.png")
+```
+
+
+
+

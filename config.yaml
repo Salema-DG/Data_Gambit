@@ -2,7 +2,6 @@ theme: "hugo-PaperMod"
 baseURL: https://data-gambit.netlify.app/
 languageCode: en-us
 title: Data Gambit
-description: Miguel Salema
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -19,7 +18,7 @@ minify:
 menu:
     main:
                 - name: About 
-                  url: about
+                  url: archives
                   weight: 10
                 - name: Profile
                   url: archives
@@ -36,7 +35,6 @@ menu:
                 - name: Categories
                   url: categories/
                   weight: 10
-
 outputs:
     home:
         - HTML
@@ -45,8 +43,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: 
-    author: Miguel Salema
+    #author: Miguel Salema
     # author: ["Me", "You"] # multiple authors
 
     defaultTheme: auto
@@ -60,8 +57,9 @@ params:
     ShowCodeCopyButtons: true
     ShowToc: true
     # comments: false
-    images: ["resources/_gen/images/pngegg.png"]
-
+    #images: ["resources/_gen/images/pngegg.png"]
+    
+  
     profileMode:
         enabled: true
         Title: "Data Gambit"
@@ -71,12 +69,10 @@ params:
                  **Miguel Salema**
         Author: "**Miguel Salema**"
         description: "grewgwgw"
-        imageUrl: "resources/_gen/images/pngegg.png"
-        imageTitle: "<pngegg>" # optional
+        imageUrl: "resources/_gen/images/fig2.png"
+        imageTitle: "pngegg" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
-        # imageWidth: 120
-        # imageHeight: 120
         buttons:
             - name: Archives
               url: archives
@@ -90,8 +86,8 @@ params:
         Subtitle: "Life is made of trade-offs."
         Content: >
              **Miguel Salema**
-   
-   
+             
+             
     socialIcons:
         - name: github
           url: "https://github.com/Salema-DG?tab=repositories"
@@ -139,3 +135,4 @@ services:
         disableInlineCSS: true
     twitter:
         disableInlineCSS: true
+              
