@@ -71,7 +71,7 @@ params:
         description: "grewgwgw"
         #imageUrl: "resources/_gen/images/fig1.png"
         #images: "resources/_gen/images/fig1.png"
-        imageUrl: "https://raw.githubusercontent.com/Salema-DG/Data_Gambit/main/resources/_gen/images/fig1.png"
+        imageUrl: "https://raw.githubusercontent.com/Salema-DG/Data_Gambit/main/resources/_gen/images/pngegg.png"
         imageTitle: "work" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
