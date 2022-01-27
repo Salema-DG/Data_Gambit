@@ -71,10 +71,10 @@ params:
         description: "grewgwgw"
         #imageUrl: "resources/_gen/images/fig1.png"
         #images: "resources/_gen/images/fig1.png"
-        imageUrl: "https://raw.githubusercontent.com/Salema-DG/Data_Gambit/main/resources/_gen/images/pngegg.png"
+        imageUrl: "https://raw.githubusercontent.com/Salema-DG/Data_Gambit/main/resources/_gen/images/exp2.png"
         imageTitle: "work" # optional
-        imageWidth: 120 # custom size
-        imageHeight: 120 # custom size
+        imageWidth: 200 # custom size
+        imageHeight: 200 # custom size
         buttons:
             - name: Archives
               url: archives
