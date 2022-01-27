@@ -19,6 +19,7 @@ minify:
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title: Data Gambit
+    description: Here is a desription
     author: Miguel Salema
     defaultTheme: auto
     # disableThemeToggle: true
@@ -57,10 +58,12 @@ params:
     homeInfoParams:
         Title: "Data Gambit"
         Content: >
-             **Miguel Salema**  
+             by **Miguel Salema** 
+             <center>
+             <img class="marginauto" src="https://raw.githubusercontent.com/Salema-DG/Data_Gambit/main/resources/_gen/images/exp3.png" alt="centered image" width="300"/> 
+             <center>
              
              Life is made of trade-offs
-
              
              
     socialIcons:
@@ -124,6 +127,7 @@ cover:
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: false # only hide on current single page
+    hiddenInSingle: false
 
 taxonomies:
     category: categories
