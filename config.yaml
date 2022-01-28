@@ -45,7 +45,7 @@ params:
         
         #imageUrl: "resources/_gen/images/fig1.png"
         #images: "resources/_gen/images/fig1.png"
-        imageUrl: "https://raw.githubusercontent.com/Salema-DG/Data_Gambit/main/resources/_gen/images/exp3.png"
+        imageUrl: "https://raw.githubusercontent.com/Salema-DG/Data_Gambit/main/resources/_gen/images/img5.png"
         imageTitle: "work" # optional
         imageWidth: 250 # custom size
         imageHeight: 250 # custom size
