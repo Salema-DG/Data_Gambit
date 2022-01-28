@@ -1,0 +1,95 @@
+---
+title: "Interactive graphs experince"
+author: "Miguel Salema"
+---
+
+
+
+```{r, include=FALSE}
+library(plotly)
+library(quantmod)
+library(dplyr)
+library(gapminder)
+```
+
+
+# 1^st^ Graph
+
+```{r, include=FALSE, warning=FALSE}
+invisible(getSymbols("AAPL",src='yahoo'))
+
+df <- data.frame(Date=index(AAPL),coredata(AAPL))
+df <- tail(df, 30)
+df$ID <- seq.int(nrow(df))
+
+accumulate_by <- function(dat, var) {
+  var <- lazyeval::f_eval(var, dat)
+  lvls <- plotly:::getLevels(var)
+  dats <- lapply(seq_along(lvls), function(x) {
+    cbind(dat[var %in% lvls[seq(1, x)], ], frame = lvls[[x]])
+  })
+  dplyr::bind_rows(dats)
+}
+
+df <- df %>%
+  accumulate_by(~ID)
+
+p <- ggplot(df,aes(ID, AAPL.Close, frame = frame)) +
+  geom_line()
+
+fig <- ggplotly(p) %>%
+  layout(
+    title = "AAPL: Last 30 days",
+    yaxis = list(
+      title = "Close",
+      zeroline = F,
+      tickprefix = "$"
+    ),
+    xaxis = list(
+      title = "Day",
+      zeroline = F, 
+      showgrid = F
+    )
+  ) %>% 
+  animation_opts(
+    frame = 100, 
+    transition = 0, 
+    redraw = FALSE
+  ) %>%
+  animation_slider(
+    currentvalue = list(
+      prefix = "Day "
+    )
+  )
+```
+
+
+```{r, echo=FALSE, warning=FALSE}
+fig
+```
+
+# 2^nd^ Graph
+
+```{r, include=FALSE, warning=FALSE}
+data <- gapminder %>% filter(year=="2007") %>% dplyr::select(-year)
+
+# Most basic bubble plot
+p <- data %>%
+      arrange(desc(pop)) %>%
+      mutate(country = factor(country, country)) %>%
+      ggplot(aes(x=gdpPercap, y=lifeExp, size=pop, color=continent)) +
+        geom_point(alpha=0.5) +
+        scale_size(range = c(.1, 24), name="Population (M)")
+```
+
+
+```{r, echo=FALSE, warning=FALSE}
+ggplotly(p)
+```
+
+
+
+
+
+
+
