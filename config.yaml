@@ -34,7 +34,7 @@ params:
 # I can leave this here deactivated  
     profileMode:
         enabled: false
-        Title: "Data Gambit 2"
+        Title: "Data Gambit"
         Subtitle: > 
                  Life is made of trade-offs  
                  
@@ -54,7 +54,7 @@ params:
         
 
     homeInfoParams:
-        Title: "Data Gambit"
+        Title: "Data Gambit 2"
         Content: >
              by **Miguel Salema** 
              <center>
