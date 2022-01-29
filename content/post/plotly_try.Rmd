@@ -11,6 +11,8 @@ draft: true
 description: "This is an attempt of a cool post."
 cover:
   image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.lasirena.la%2F__export%2F1606073893828%2Fsites%2Fdebate%2Fimg%2F2020%2F11%2F22%2Fsa2h5dwgfbfxbdvy5branx6iya_crop1606073893413.jpg_242310155.jpg&f=1&nofb=1" # image path/url
+  caption: "An example of a fucking genius" # display caption under cover
+  hidden: false # true will make it only appear in the home section
 ---
 
 fvwefgwegwgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
