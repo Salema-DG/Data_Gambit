@@ -1,7 +1,6 @@
 ---
 title: "This is not a title"
 author: "Miguel Salema"
-summary: "Frequently Asked Questions"
 date: 2022-01-28
 tags: ["R", "Interactive"]
 categories: ["R", "Econometrics"]
