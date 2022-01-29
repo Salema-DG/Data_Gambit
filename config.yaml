@@ -1,5 +1,5 @@
 theme: "hugo-PaperMod"
-baseURL: https://data-gambit.com/
+baseURL: https://data-gambit.netlify.app/
 languageCode: en-us
 title: Data Gambit
 
