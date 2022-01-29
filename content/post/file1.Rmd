@@ -7,7 +7,7 @@ categories: ["R", "Econometrics"]
 showToc: true
 TocOpen: false
 draft: true
-description: "This is an attempt of a cool post."
+description: "This is an attempt of a cool post"
 ---
 
 
